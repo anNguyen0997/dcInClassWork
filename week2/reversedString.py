@@ -6,11 +6,21 @@ def reverseStr(str):
     reversedIn= userIn[::-1]
     print(reversedIn)
 
-#Using a FOR loop -------------------------------------------------------
+#Using a FOR loop -------------------------------------------------------------------------
 def reverseStr(str):
     strIn = ''
     for i in userIn:
         strIn = i + strIn
     print(strIn)
+
+
+
+
+
+
+
+
+
+
 
 reverseStr(str)
