@@ -2,6 +2,7 @@
 #breed, weight, fur color, name
 # Each animal will make their own unique sound
 # Cat/Dog class which can do everything that both animals can do, but in its unique twist
+
 class Cat:
     def __init__(self, breed: str, weight: int, furColor: str, name: str):
         self.breed = breed 
