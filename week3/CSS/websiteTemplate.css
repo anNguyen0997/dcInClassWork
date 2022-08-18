@@ -1,0 +1,52 @@
+body {
+    font-size: 24px;
+    margin: 0;
+}
+
+.structure {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.header {
+    padding: 25px;
+}
+
+.main {
+    background-color: grey;
+    order: 2;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar-right {
+    order: 3;
+    width: 30%;
+}
+
+.sidebar-left {
+    order: 1;
+    width: 20%;
+}
+
+.header
+.sidebar-right
+.sidebar-left {
+    padding: 10px;
+}
+
+.header {
+    border-bottom: 2px solid black;
+}
+
+.footer {
+    border-top: 2px solid black;
+}
