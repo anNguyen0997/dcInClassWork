@@ -1,0 +1,27 @@
+body {
+    --bl-color: black;
+    --red-color: red;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: var(--red-color);
+}
+
+.square:nth-child(even) {
+    background-color: var(--bl-color);
+} 
+
+.row:nth-child(even) .square {
+    background-color: var(--bl-color);
+}
+
+.row:nth-child(even) .square:nth-child(even) {
+    background-color: var(--red-color);
+}
