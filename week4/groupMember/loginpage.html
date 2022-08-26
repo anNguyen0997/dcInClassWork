@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./loginpage.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <h1>Login</h1>
+
+  <form id="loginForm" class="row g-3 needs-validation">
+
+    <div>
+      <div id="username" class="input-group">
+        <span class="input-group-text">Email</span>
+        <input type="email" minlength="6" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          title="Please make sure your email address is properly formatted. e.g. - jsmith@gmail.com"
+          aria-label="First name" class="form-control" placeholder="email@address.com" id="emailForm" required>
+      </div>
+      <div id="password" class="input-group">
+        <span class="input-group-text">Password</span>
+        <input type="password" minlength="8" maxlength="24" aria-label="Password" class="form-control"
+          pattern="^[a-zA-Z0-9_.-]*$"
+          title="Please ensure your password is 4-28 characters long, containing only alphabetical characters and numerical values."
+          placeholder="4-28 characters long, only alphabetical characters and numerical values" id="passwordForm"
+          required>
+      </div>
+
+      <button id="loginButton" type="submit" class="btn btn-primary">Login</button>
+<div>
+      <a id="register-page" href="./groupMembers.html">Don't have an account? Click here to register today!</a>
+    </div>
+    </div>
+  </form>
+
+
+</body>
+
+</html>
+<script src="../groupMember/groupMembers.js>

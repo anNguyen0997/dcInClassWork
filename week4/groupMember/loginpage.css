@@ -1,0 +1,33 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 6%;
+    background-color: #A5C9CA;
+}
+
+h1 {
+    text-align: center;
+    color: #395B64;
+}
+
+#username {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#password {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #2C3333;
+    border: 1px solid #395B64;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    color: #395B64;
+}

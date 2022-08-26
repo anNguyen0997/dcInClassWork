@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="navbar">        <!-- start of navbar -->
-        <div class="navbar-contents">       <!-- start of navbar-content -->
+        <div class="navbar-contents">       <!-- start of navbar-cocntent -->
             <div class="navbar-left">       <!-- logo and searchbar div -->
                 <img class="logo" src="../images/linkedin-logo-png-2026.png" alt="Logo" >
                 <div class="navbar-search">
@@ -22,6 +22,7 @@
 
             <div class="navbar-right">      <!-- navbar icons -->
                 <div class="navbar-icons">
+                    
                     <h3>Home</h3>
                 </div>
                 <div class="navbar-icons">
@@ -57,12 +58,22 @@
                         <h4>Student at DigitalCrafts</h4>
                             Houston, Texas, United States - <b><a href="">Contact Info</a></b>
                     </p>
-                        <button type="button" class="btn btn-primary">Open</button>
-                        <button type="button" class="btn btn-light">Add profile section</button>
-                        <button type="button" class="btn btn-secondary">More</button> 
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Open
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Finding a new job</a>
+                          <a class="dropdown-item" href="#">Hiring</a>
+                          <a class="dropdown-item" href="#">Providing services</a>
+                        </div>
+
+                        <!-- <button type="button" id="open-btn" class="btn btn-primary">Open</button> -->
+
+                        <button type="button" id="add-profile-btn" class="btn btn-light" onclick="openProfileBtn()">Add profile section</button>
+                        <button type="button" id="more-btn" class="btn btn-secondary" onclick="openMoreButton()">More</button> 
             </div>
 
-            <div class="education">     <!-- education section -->
+            <div class="education">         <!-- education section -->
                 <h2>Education</h2>
                 <div class="education-img">
                     <div class="education-info">
@@ -78,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="skills">        <!-- skills section -->
+            <div class="skills">            <!-- skills section -->
                     <h2>Skills</h2>
                     <p><b>Python (Programming Language</b></p>
                     <img class="skills-dcLogo" src="../images/dcLogo.png" alt="dc Logo">
@@ -123,5 +134,12 @@
 
             </div>
     </div>
+
+
 </body>
+<script src="../javascript/linkedInClone.js">
+    
+    const moreButton = document.getElementById('more-btn');
+
+</script>
 </html>
