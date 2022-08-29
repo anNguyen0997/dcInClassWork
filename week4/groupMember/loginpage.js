@@ -1,13 +1,15 @@
 let data = [];
 
-let form = document.getElementById('loginForm');
-submit.addEventListener('submit', function(event) {
-    event.preventDefault();
+
+let form = document.getElementById('form');
+let  login = document.getElementById('loginForm');
+login.addEventListener('submit', function(event) {
+event.preventDefault();
 
     let userEmail = getEmail();
-    let userFirst = getFirstName();
-    let userLast = getLastName();
-    let userPhone = getPhone();
+    // let userFirst = getFirstName();
+    // let userLast = getLastName();
+    // let userPhone = getPhone();
     let userPassword = getPassword();
 
     let userData = {
@@ -20,12 +22,36 @@ submit.addEventListener('submit', function(event) {
 
     data.push(userData)
     console.log(data);
+    // alert(`${userFirst} ${userLast} is now registered`)
 
-    let form = document.getElementById('form');
     form.reset();
 
     return data;
 })
+
+
+
+
+function getEmail() {
+    return document.getElementById('emailForm').value;
+}
+
+// function getFirstName() {
+//     return document.getElementById('firstForm').value;
+// }
+
+// function getLastName() {
+//     return document.getElementById('lastForm').value;
+// }
+// function getPhone() {
+//     return document.getElementById('phoneForm').value;
+// }
+
+function getPassword() {
+    return document.getElementById('password').value;
+}
+
+
 
 function checkPassword(userEmail, userPassword) {                // checking for existing user
     let storedData = new Map()                              // storing data into a map

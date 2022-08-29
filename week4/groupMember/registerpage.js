@@ -2,17 +2,15 @@ let data = [];
 
 let submit = document.getElementById('form');
 submit.addEventListener('submit', function(event) {
-    event.preventDefault();
+event.preventDefault();
 
     let userEmail = getEmail();
     let userFirst = getFirstName();
     let userLast = getLastName();
     let userPhone = getPhone();
     let userPassword = getPassword();
-    // let userName = getUsername();
 
     let userData = {
-        // username: userName,
         email: userEmail,
         first: userFirst,
         last: userLast,
@@ -22,6 +20,7 @@ submit.addEventListener('submit', function(event) {
 
     data.push(userData)
     console.log(data);
+    alert(`${userFirst} ${userLast} is now registered`)
 
     let form = document.getElementById('form');
     form.reset();
